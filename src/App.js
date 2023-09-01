@@ -1,8 +1,14 @@
-import './App.css';
+import "./App.css";
+import { Page } from "./components/Page";
+import { TasksProvider } from "./contexts/tasksContext";
 
 function App() {
   return (
-    <div className="App"></div>
+    <TasksProvider>
+      <div className="App">
+        <Page />
+      </div>
+    </TasksProvider>
   );
 }
 
