@@ -1,11 +1,10 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import { taskContext } from "../contexts/tasksContext";
 import { Card } from "./Card";
 
 export const Column = ({ title }) => {
   const context = useContext(taskContext);
-  const [task, setTasks] = useState(context);
-  const taskArr = task.initialContext.tasksArr;
+  const taskArr = context.initialContext.tasksArr;
 
   return (
     <>

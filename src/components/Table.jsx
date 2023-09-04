@@ -1,12 +1,12 @@
-import React, { useContext } from "react"
-
+import React, { useState } from "react"
 import { Column } from "./Сolumn"
 
 
-export const Table = ({countColmn}) => {
+export const Table = () => {
+   let [countColumn, setCountColumn] = useState(['todo', 'progress', 'done'])
    return (
       <div>
-         {countColmn.map((el) => <Column key={el} title={el}/>)}
+         {countColumn.map((el) => <Column key={el} title={el}/>)}
       </div>
    )
 }

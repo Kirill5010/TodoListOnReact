@@ -5,11 +5,6 @@ const initialContext = {
     { id: 1, status: "todo", text: "Hi1" },
     { id: 2, status: "progress", text: "Hi2" },
     { id: 3, status: "done", text: "Hi3" },
-  ],
-  countColumn: [
-    'todo',
-    'progress',
-    'done',
   ]
 };
 
